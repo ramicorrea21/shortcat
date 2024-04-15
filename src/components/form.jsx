@@ -1,4 +1,5 @@
 import { useState } from "react"
+
 export function Form(){
     const [url, setUrl] = useState({
         url : ""
@@ -30,21 +31,29 @@ export function Form(){
 
 
     return(
-<section className="flex-1 container mx-auto px-6 py-20">
-<div className="bg-gray-50 rounded-xl shadow-lg p-8 md:p-12 lg:p-16">
-    <h2 className="text-2xl font-semibold mb-6 text-center">Shorten Your URL here</h2>
+<section className="flex-1 container mx-auto px-4 sm:px-6 py-12">
+  <div className="bg-gray-50 rounded-xl shadow-lg p-6 sm:p-8 md:p-12 lg:p-16">
+    <h2 className="text-xl sm:text-2xl font-semibold mb-6 text-center">Shorten Your URL here</h2>
     <form onSubmit={handleSubmit}>
-        <div>
-            <input type="url" name="url" onChange={handleChange} id="url" placeholder="Paste your URL" className="w-full p-3 border-gray-300 rounded-lg mb-6" required/>
-        </div>
-        <div className="text-center">
-            <button type="submit" className="bg-black hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg">
-                Shorten URL
-            </button>
-        </div>
-        {shortUrl && <p>🚀Short URL: <a className="cursor-pointer text-blue-500" href={shortUrl} target="_blank" rel="noopener noreferrer">{shortUrl} </a></p>}
+      <div>
+        <input type="url" name="url" onChange={handleChange} id="url" placeholder="Paste your URL" className="w-full p-3 border-gray-300 rounded-lg mb-4 sm:mb-6" required />
+      </div>
+      <div className="text-center">
+        <button type="submit" className="bg-black hover:bg-gray-800 text-white font-bold py-2 sm:py-3 px-4 sm:px-6 rounded-lg">
+          Shorten URL
+        </button>
+      </div>
+      {shortUrl && (
+        <p className="mt-4 text-center">
+          🚀Short URL:
+          <a className="cursor-pointer text-blue-500" href={`https://${shortUrl}`} target="_blank" rel="noopener noreferrer">
+            {shortUrl}
+          </a>
+        </p>
+      )}
     </form>
-</div>
+  </div>
 </section>
+
     )
 }
