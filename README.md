@@ -1,33 +1,58 @@
-ShortCat URL Shortener 🐱
+# ShortCat URL Shortener 🐱
+
 Welcome to ShortCat, a simple URL shortener application. ShortCat provides an easy way to shorten long URLs, making them more manageable and shareable.
 
-Frontend
-The frontend of ShortCat is built using Astro and React, providing a sleek and responsive landing page for users to interact with the URL shortening service.
+## Frontend
 
-Technologies Used:
-Astro: A modern web framework for building faster websites.
-React: A JavaScript library for building user interfaces.
-Setup Instructions:
-Clone this repository.
-Navigate to the frontend directory.
-Install dependencies using npm install.
-Start the development server with npm run dev.
-Visit http://localhost:3000 in your browser to view the ShortCat landing page.
-Backend
-ShortCat's backend is powered by Flask, Flask-SQLAlchemy, Flask-Migrate, and other tools to handle URL shortening requests and database management.
+The frontend of ShortCat is built using [Astro](https://astro.build/) and [React](https://reactjs.org/), providing a sleek and responsive landing page for users to interact with the URL shortening service.
 
-Technologies Used:
-Flask: A lightweight WSGI web application framework in Python.
-Flask-SQLAlchemy: Flask extension for SQLAlchemy, a SQL toolkit and Object-Relational Mapping (ORM) library.
-Flask-Migrate: Flask extension that handles SQLAlchemy database migrations.
-Setup Instructions:
-Clone the backend repository from ShortCat Backend.
-Navigate to the backend directory.
-Install dependencies using pip install -r requirements.txt.
-Run the Flask application with python app.py.
-The backend server will start running at http://localhost:5000.
-Note:
+### Technologies Used:
+- Astro
+- React
+
+### Setup Instructions:
+1. **Clone this repository:**
+   ```bash
+   git clone https://github.com/your-username/shortcat-frontend.git
+   ```
+2. **Navigate to the frontend directory:**
+   ```bash
+   cd shortcat-frontend
+   ```
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+4. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+5. **Visit [http://localhost:3000](http://localhost:3000) in your browser to view the ShortCat landing page.**
+
+## Backend
+
+The backend of ShortCat is powered by [Flask](https://flask.palletsprojects.com/), [Flask-SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/), [Flask-Migrate](https://flask-migrate.readthedocs.io/), and other tools to handle URL shortening requests and database management.
+
+### Technologies Used:
+- Flask
+- Flask-SQLAlchemy
+- Flask-Migrate
+
+### Setup Instructions:
+1. **Clone the backend repository from [ShortCat Backend](link_to_your_backend_repo).**
+2. **Navigate to the backend directory.**
+3. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. **Run the Flask application:**
+   ```bash
+   python app.py
+   ```
+5. **The backend server will start running at [http://localhost:5000](http://localhost:5000).**
+
+### Note:
 Make sure the frontend and backend servers are running simultaneously for the full functionality of ShortCat.
 
-Contributing
+## Contributing
 Contributions are welcome! Please feel free to open issues or submit pull requests to help improve ShortCat.
