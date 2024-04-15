@@ -27,7 +27,7 @@ The frontend of ShortCat is built using [Astro](https://astro.build/) and [React
    ```bash
    npm run dev
    ```
-5. **Visit [http://localhost:3000](http://localhost:3000) in your browser to view the ShortCat landing page.**
+5. **Visit [http://localhost:3000](http://localhost:4321) in your browser to view the ShortCat landing page.**
 
 ## Backend
 
