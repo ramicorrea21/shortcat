@@ -13,7 +13,7 @@ The frontend of ShortCat is built using [Astro](https://astro.build/) and [React
 ### Setup Instructions:
 1. **Clone this repository:**
    ```bash
-   git clone https://github.com/your-username/shortcat-frontend.git
+   git clone https://github.com/ramicorrea21/shortcat.git
    ```
 2. **Navigate to the frontend directory:**
    ```bash
@@ -39,7 +39,7 @@ The backend of ShortCat is powered by [Flask](https://flask.palletsprojects.com/
 - Flask-Migrate
 
 ### Setup Instructions:
-1. **Clone the backend repository from [ShortCat Backend](link_to_your_backend_repo).**
+1. **Clone the backend repository from [ShortCat Backend](https://github.com/ramicorrea21/shortcat-rest.git).**
 2. **Navigate to the backend directory.**
 3. **Install dependencies:**
    ```bash
